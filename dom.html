@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog website.</h1>
+    </header>
+
+    <main>
+        <!-- blog section starts here -->
+        <section id="blogs">
+            <header>
+                <h2>Blogs List</h2>
+                <ul id="blog-list">
+                    <li>Blog-1</li>
+                    <li>Blog-2</li>
+                    <li>Blog-3</li>
+                    <li>Blog-4</li>
+                </ul>
+            </header>
+            <article class="blog">
+                <h3 id = "first-title">My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est odio voluptatum architecto ipsa dignissimos deleniti ullam, quaerat exercitationem explicabo quidem molestiae vero dolorum sed sunt, repudiandae officia porro voluptate error.</p>
+            </article>
+            <article class="blog">
+                <h3 id="second-title">My Awesome Blog-2</h3>
+                <p>Ab, nesciunt. Voluptates veniam molestiae laudantium hic nisi ex distinctio numquam eius facere sint saepe odit quod magnam repellendus odio, beatae at dolore tempora quis omnis! Quo explicabo pariatur qui?</p>
+            </article>
+            <article id = "third-article" class="blog">
+                <h3 id="third-title">My Awesome Blog-3</h3>
+                <p>Iste tempore reiciendis provident in eligendi iure illum consequatur ipsum dignissimos explicabo, ex harum. Vel quam ad velit, sit ea, dolorem dicta unde placeat incidunt quae culpa, aliquid reiciendis doloribus?</p>
+            </article>
+            <article class="blog">
+                <h3 id="fourth-title">My Awesome Blog-4</h3>
+                <p>Iste tempore reiciendis provident in eligendi iure illum consequatur ipsum dignissimos explicabo, ex harum. Vel quam ad velit, sit ea, dolorem dicta unde placeat incidunt quae culpa, aliquid reiciendis doloribus?</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        const student ={name: 'Kissmot Ali', age: 16, height: 60};
+        const blogTitles = document.getElementsByTagName('h3');
+        // console.log(blogTitles);
+        // console.log(document.body);
+
+        for(const h3 of blogTitles){
+            console.log(h3.innerHTML);
+        }
+        const blogDetails = document.getElementsByTagName('p');
+
+        for(const p of blogDetails){
+            console.log(p.innerHTML);
+        }
+
+        //Explore getElementById
+        document.getElementById('second-title').style.color = 'cyan';
+        document.getElementById('second-title').style.textAlign = 'center';
+
+        document.getElementById('third-title').innerText = "Title Updated By JS";
+        document.getElementById('third-title').style.backgroundColor = 'salmon';
+        document.getElementById('third-title').style.padding = '10px';
+
+        //Explore getElementsByClassName
+        const blogs = document.getElementsByClassName('blog');
+
+        for(const blog of blogs){
+            blog.style.border = '2px solid orange';
+            blog.style.borderRadius = "10px";
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+        }
+    </script>
+    
+</body>
+</html>

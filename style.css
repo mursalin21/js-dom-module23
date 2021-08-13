@@ -1,0 +1,18 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: red;
+}
+
+#second-title {
+    background-color: blueviolet;
+}
+
+/* .blog {
+    border: 2px solid orange;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+} */
